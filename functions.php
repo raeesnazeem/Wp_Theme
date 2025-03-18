@@ -6,7 +6,7 @@ function medspa_files() {
     wp_enqueue_style('medspa_extra_styles', get_theme_file_uri('/build/index.css'));
 }
 
-add_action('wp_enqueue_scripts', 'medspa_files'); //This is to load the css and javascript. medspa_files is the name of the function that we created and wordpress will call when required. The function is declared above. wp_enqueue_scripts is the wordpress hook 
+add_action('wp_enqueue_scripts', 'medspa_files'); //This is to load the css and javascript. medspa_files is the name of the function that we created and wordpress will call when required. The function is declared above. wp_enqueue_scripts is the wordpress hook.
 
 function medspa_additional_features() {
     register_nav_menu('headerMenuLocation', 'Header Menu Location');
